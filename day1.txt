@@ -1,0 +1,28 @@
+1. reverse words in string
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s="i.love.programming";
+    string s2="";
+    int n=s.size();
+    
+    int i;
+    int r;
+    for(int i=n-1;i>=0;i--){
+        if(s[i]=='.'){
+            r=n-i;
+            n=i-1;
+            s2.append(s.substr(i+1,r));
+            s2.append(".");
+            
+        }
+    }
+    s2.append(s.substr(0,n+1));
+    cout<<s2;
+}
+
+
+2. Permutations of Strings
+
